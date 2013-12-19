@@ -1,5 +1,21 @@
-<h3>Home</h3>
-<p>Welcome to the home of <%= @owner.name %>.</p>
-<p>I was born on <%= @owner.birthdate %>.</p>
-<p>Only <%= @owner.countdown %> days till my birthday!</p>
+<%= content_for :title do %>Balachandra Bhat <% end %>
+<%= content_for :description do %>Website of Balu Bhat <% end %>
+<section>
+<img src="http://lorempixel.com/1170/600/cats/1">
+</section>
+<section>
+<div class="column">
+  <h2>Subscribe to cat facts!</h2>
+</div>
+<div class="column">
+  <div class="form-centered">
+    <%= simple_form_for @visitor do |f| %>
+      <%= f.error_notification %>
+      <%= f.input :email, label: false, :placeholder => 'Your email address...' %>
+      <br/>
+      <%= f.button :submit, "I want cat facts!", :class => 'submit' %>
+    <% end %>
+  </div>
+</div>
+</section>
 

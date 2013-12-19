@@ -4,5 +4,5 @@ README
 Learning Rails
 ==
 
-Testing out Rails by following Daniel Kahoe's tutorial
+Testing out Rails by following Daniel Kehoe's tutorial
 

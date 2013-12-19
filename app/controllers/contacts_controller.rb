@@ -9,6 +9,7 @@ class ContactsController < ApplicationController
     if @contact.valid?
       #TODO: Save date
       #TODO: Send message
+      @contact.update_spreadsheet
       flash[:notice] = "Message sent from #{@contact.name}"
       redirect_to root_path
     else
